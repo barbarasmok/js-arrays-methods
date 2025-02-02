@@ -54,72 +54,34 @@
     ></script>
   </head>
   <body>
-    <!-- Navbar -->
-    <nav
-      class="navbar fixed-top navbar-dark navbar-expand-lg text-white mx-auto"
-      data-bs-theme="dark"
-    >
-      <div class="container">
-        <a class="navbar-brand" href="./index.html">
-          <img
-            src="./assets/imgs/logos/logo-white.svg"
-            alt="Logo Inmobiliaria America"
-            width="70%"
-            height="auto"
-          />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link text-white" href="./venta.html">Venta</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="./alquiler.html">Alquiler</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="./contacto.html">Contacto</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
     <!--Hero Section-->
     <section class="hero-section">
       <div class="container text-light">
         <div
-          class="mx-auto ms-md-0 ms-lg-0 col-12 col-xs-12 col-md-10 col-lg-10"
+          class="mx-auto col-12"
         >
-          <span>Construyendo sueños</span>
-          <h1>
-            Descubre tu nuevo hogar con<br />
-            Inmobiliaria America
-          </h1>
-          <p class="mt-2 mb-4 mb-md-4 mb-lg-5 mt-lg-0 intro-hero">
-            Explora propiedades exclusivas en Viña del Mar, Santiago y más allá.
-            Con más de una década de experiencia, Inmobiliaria America es tu
-            socio confiable en la búsqueda de la casa perfecta o la inversión
-            inmobiliaria ideal.
-          </p>
+          <span>Lista de Tareas</span>
+          <h1>To Do List - Febrero</h1>
+          <div class="nuevaTareaBlock">
+          <input
+            type="text"
+            id="nuevaTarea"
+            placeholder="Escribe una nueva tarea"
+          />
+          <button class="btn-dark" onclick="agregarTarea()">Agregar Tarea</button>
+        </div>
+          <ul id="listaTareas"></ul>
+
+          <div id="resumen">
+            <h3>Resumen</h3>
+            <div class="resumenTotal"></div>
+              <p>Total de tareas: <span id="totalTareas">0</span></p>
+              <p>Tareas realizadas: <span id="tareasRealizadas">0</span></p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-
-    <!-- Main -->
-    <main></main>
-
     <script src="./assets/js/script.js"></script>
     <!-- Boostrap JS -->
     <script
