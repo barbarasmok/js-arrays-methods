@@ -35,7 +35,7 @@ function actualizarLista() {
             <div class="contenedor-eliminar-tarea">
                 <button onclick="eliminarTarea(${
                   tarea.id
-                })" class="boton">❌</button>
+                })" id=btn-delete class="boton">❌</button>
             </div>
         </div>
         `;

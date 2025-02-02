@@ -57,24 +57,24 @@
     <!--Hero Section-->
     <section class="hero-section">
       <div class="container text-light">
-        <div
-          class="mx-auto col-12"
-        >
-          <span>Lista de Tareas</span>
+        <div class="mx-auto col-12">
+          <span class="introTag">Lista de Tareas</span>
           <h1>To Do List - Febrero</h1>
           <div class="nuevaTareaBlock">
-          <input
-            type="text"
-            id="nuevaTarea"
-            placeholder="Escribe una nueva tarea"
-          />
-          <button class="btn-dark" onclick="agregarTarea()">Agregar Tarea</button>
-        </div>
+            <input
+              type="text"
+              id="nuevaTarea"
+              placeholder="Escribe una nueva tarea"
+            />
+            <button class="btn-dark" onclick="agregarTarea()">
+              Agregar Tarea
+            </button>
+          </div>
           <ul id="listaTareas"></ul>
 
           <div id="resumen">
             <h3>Resumen</h3>
-            <div class="resumenTotal"></div>
+            <div class="resumenTotal">
               <p>Total de tareas: <span id="totalTareas">0</span></p>
               <p>Tareas realizadas: <span id="tareasRealizadas">0</span></p>
             </div>
